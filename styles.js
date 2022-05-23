@@ -72,14 +72,15 @@ document.addEventListener("DOMContentLoaded",function(){
         src2+="dice6.png"
 
     }
+
+    downloadingimage1.src = src1
+    downloadingimage2.src = src2
+
     downloadingimage1.onload = function(){
-        image1.src = this.src1;   
+        image1.src = this.src;   
     };
     downloadingimage2.onload = function(){
-        image2.src = this.src2;   
+        image2.src = this.src;   
     };
-
-    console.log('src1 '+src1)
-    console.log('src2 '+src2)
 
 })
