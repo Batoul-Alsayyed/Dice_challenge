@@ -5,4 +5,9 @@ document.addEventListener("DOMContentLoaded",function(){
     var image1 = document.getElementsByClassName("img1")[0]
     var image2 = document.getElementsByClassName("img2")[0]
 
+    var downloadingimage1 = new Image()
+    var downloadingimage2 = new Image()
+    src1 = "images/"
+    src2 = "images/"
+
 })
