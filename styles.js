@@ -43,38 +43,39 @@ document.addEventListener("DOMContentLoaded",function(){
 
     if (num2==1){
         //load image1
-        src1+="dice1.png"
+        src2+="dice1.png"
 
     }
     else if (num2==2){
         //load image2
-        src1+="dice2.png"
+        src2+="dice2.png"
 
     }
     else if (num2==3){
         //load image 3
-        src1+="dice3.png"
+        src2+="dice3.png"
 
     }
     else if (num2==4){
         //load image 4
-        src1+="dice4.png"
+        src2+="dice4.png"
 
     }
     else if (num2==5){
         //load image 5
-        src1+="dice5.png"
+        src2+="dice5.png"
 
     }
     else if (num2==6){
         //load image 6
-        src1+="dice6.png"
+        src2+="dice6.png"
 
     }
     downloadingimage1.onload = function(){
-        image.src = src1;   
+        image1.src = this.src1;   
     };
     downloadingimage2.onload = function(){
-        image.src = src2;   
+        image2.src = this.src2;   
     };
+    
 })
