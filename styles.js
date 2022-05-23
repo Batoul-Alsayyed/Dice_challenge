@@ -3,8 +3,8 @@ document.addEventListener("DOMContentLoaded",function(){
     var num1 = Math.floor((Math.random()*6)+1) // picking random number from 1 to 6 
     var num2 = Math.floor((Math.random()*6)+1)
    
-    var image1 = document.getElementsByClassName("img1")[0]
-    var image2 = document.getElementsByClassName("img2")[0]
+    var image1 = document.images[0]
+    var image2 = document.images[1]
 
     var downloadingimage1 = new Image()
     var downloadingimage2 = new Image()
@@ -78,5 +78,8 @@ document.addEventListener("DOMContentLoaded",function(){
     downloadingimage2.onload = function(){
         image2.src = this.src2;   
     };
+
+    console.log('src1 '+src1)
+    console.log('src2 '+src2)
 
 })
