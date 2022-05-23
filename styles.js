@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded",function(){
+    //https://blog.teamtreehouse.com/learn-asynchronous-image-loading-javascript
     var num1 = Math.floor((Math.random()*6)+1) // picking random number from 1 to 6 
     var num2 = Math.floor((Math.random()*6)+1)
    
@@ -77,5 +78,5 @@ document.addEventListener("DOMContentLoaded",function(){
     downloadingimage2.onload = function(){
         image2.src = this.src2;   
     };
-    
+
 })
